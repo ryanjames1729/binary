@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Binary Number Converter</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper grey">
+      <ul class="center" style="color: black; font-size: 48px; font-family: Palatino"><strong>Binary Number Converter<strong></ul>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value7"><strong>128</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value6"><strong>64</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value5"><strong>32</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value4"><strong>16</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value3"><strong>8</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value2"><strong>4</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value1"><strong>2</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <div class="scroll center">
+      <div class="flex-center">
+        <div class="card m-5">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-text center" style="font-size: 48px; color: lightgrey" id="value0"><strong>1</strong></h4>
+            <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click7()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin7"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click6()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin6"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click5()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin5"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click4()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin4"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click3()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin3"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click2()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin2"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click1()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin1"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col m-4" style="width: 8rem">
+    <a href="#" onclick="click0()">
+      <div class="scroll center">
+        <div class="flex-center">
+          <div class="card m-5">
+            <div class="view overlay hm-white-slight">
+              <div class="mask"></div>
+            </div>
+            <div class="card-body">
+              <h4 class="card-text center" style="font-size: 48px" id="bin0"><strong>0</strong></h4>
+              <p class="card-footer:last-child" style="text-align: right; font-size: 16px"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<h1 id="total">The total is: 0</h1>
+<br><br><br><br><br><br><br><br>
+
+
+  <footer style:"display: flex; min-height: 100vh; flex-direction: column; flex: 1 0 auto; position:fixed">
+  <div class="footer-copyright wow fadeIn py-3 text-center" style="visibility: visible; animation-name: fadeIn; aninmation-delay: 0.3s;">
+    <div class="container-fluid">
+      &copy; Made by Ryan James...
+    </div>
+  </div>
+
+
+</footer>
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script>
+
+      function calculate(){
+        var result = 0;
+        if(document.getElementById("bin0").innerHTML == "1"){
+          result += 1;
+        }
+        if(document.getElementById("bin1").innerHTML == "1"){
+          result += 2;
+        }
+        if(document.getElementById("bin2").innerHTML == "1"){
+          result += 4;
+        }
+        if(document.getElementById("bin3").innerHTML == "1"){
+          result += 8;
+        }
+        if(document.getElementById("bin4").innerHTML == "1"){
+          result += 16;
+        }
+        if(document.getElementById("bin5").innerHTML == "1"){
+          result += 32;
+        }
+        if(document.getElementById("bin6").innerHTML == "1"){
+          result += 64;
+        }
+        if(document.getElementById("bin7").innerHTML == "1"){
+          result += 128;
+        }
+        document.getElementById("total").innerHTML = "The total is: " + result;
+      }
+
+      function click0(){
+        var value = document.getElementById("bin0").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin0").innerHTML = "1";
+          document.getElementById("value0").style.color = "red";
+        }
+        else{
+          document.getElementById("bin0").innerHTML = "0";
+          document.getElementById("value0").style.color = "lightgrey";
+        }
+        calculate();
+      }
+
+      function click1(){
+        var value = document.getElementById("bin1").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin1").innerHTML = "1";
+          document.getElementById("value1").style.color = "red";
+        }
+        else{
+          document.getElementById("bin1").innerHTML = "0";
+          document.getElementById("value1").style.color = "lightgrey";
+        }
+        calculate();
+      }
+
+      function click2(){
+        var value = document.getElementById("bin2").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin2").innerHTML = "1";
+          document.getElementById("value2").style.color = "red";
+        }
+        else{
+          document.getElementById("bin2").innerHTML = "0";
+          document.getElementById("value2").style.color = "lightgrey";
+        }
+        calculate();
+      }
+
+      function click3(){
+        var value = document.getElementById("bin3").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin3").innerHTML = "1";
+          document.getElementById("value3").style.color = "red";
+        }
+        else{
+          document.getElementById("bin3").innerHTML = "0";
+          document.getElementById("value3").style.color = "lightgrey";
+        }
+        calculate();
+      }
+
+      function click4(){
+        var value = document.getElementById("bin4").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin4").innerHTML = "1";
+          document.getElementById("value4").style.color = "red";
+        }
+        else{
+          document.getElementById("bin4").innerHTML = "0";
+          document.getElementById("value4").style.color = "lightgrey";
+        }
+        calculate();
+      }
+      function click5(){
+        var value = document.getElementById("bin5").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin5").innerHTML = "1";
+          document.getElementById("value5").style.color = "red";
+        }
+        else{
+          document.getElementById("bin5").innerHTML = "0";
+          document.getElementById("value5").style.color = "lightgrey";
+        }
+        calculate();
+      }
+      function click6(){
+        var value = document.getElementById("bin6").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin6").innerHTML = "1";
+          document.getElementById("value6").style.color = "red";
+        }
+        else{
+          document.getElementById("bin6").innerHTML = "0";
+          document.getElementById("value6").style.color = "lightgrey";
+        }
+        calculate();
+      }
+      function click7(){
+        var value = document.getElementById("bin7").innerHTML;
+        if(value == "0"){
+          document.getElementById("bin7").innerHTML = "1";
+          document.getElementById("value7").style.color = "red";
+        }
+        else{
+          document.getElementById("bin7").innerHTML = "0";
+          document.getElementById("value7").style.color = "lightgrey";
+        }
+        calculate();
+      }
+
+      $(document).ready(function(){
+        // Init Carousel
+        $('.carousel').carousel()
+        // Init Carousel Slider
+        $('.carousel.carousel-slider').carousel({fullWidth:true});
+        // Fire off toast
+        //Materialize.toast('Hello World', 3000);
+        // Init Slider
+        $('.slider').slider();
+        // Init Modal
+        $('.modal').modal();
+        // Init Sidenav
+        $('.button-collapse').sideNav();
+        //text area stuff
+        $('#textarea1').val('New Text');
+        M.textareaAutoResize($('#textarea1'));
+
+      });
+    </script>
+  </body>
+</html>
