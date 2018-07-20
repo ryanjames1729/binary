@@ -285,8 +285,17 @@
   </div>
 </div>
 
-<h1 id="total">The total is: 0</h1>
-<br><br><br><br><br><br><br><br>
+<h1 id="total">The total is:</h1>
+<br><br>
+<div class="switch">
+    <label>
+      Off
+      <input type="checkbox" id="switch" checked="true">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
+  <br><br><br><br><br><br>
 
 
   <footer style:"display: flex; min-height: 100vh; flex-direction: column; flex: 1 0 auto; position:fixed">
@@ -332,7 +341,12 @@
         if(document.getElementById("bin7").innerHTML == "1"){
           result += 128;
         }
-        document.getElementById("total").innerHTML = "The total is: " + result;
+        if(document.getElementById('switch').checked){
+          document.getElementById("total").innerHTML = "The total is: " + result;
+        }
+        else{
+          document.getElementById("total").innerHTML = "The total is: ";
+        }
       }
 
       function click0(){
